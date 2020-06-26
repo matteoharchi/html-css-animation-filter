@@ -38,3 +38,128 @@
 .ex-5-square:active {
     transform: scale(0.75);
 }
+/* ESERCIZIO 6 */
+.ex-6-img:hover {
+    filter: grayscale(100%);
+}
+/* ESERCIZIO 7 */
+.ex-7-img {
+    transition: 2s;
+}
+.ex-7-img:hover {
+    filter: grayscale(.3) brightness(.4);
+}
+/* ESERCIZIO 8 */
+.ex-8-img {
+    transition: 2s;
+}
+.ex-8-img:hover {
+    filter: contrast(150%) invert(100%);
+    border-radius: 10px;
+}
+/* ESERCIZIO 9 */
+.ex-9-img {
+    transition: 2s;
+}
+.ex-9-img:hover {
+    filter: blur(5px) invert(100%);
+    transform: scale(1.5);
+}
+/* ESERCIZIO 10 */
+.ex-10-icon {
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    0% {
+        transform: rotate(1turn);
+    }
+}
+/* ESERCIZIO 11 */
+.ex-11-icon:hover {
+    animation: spinandback 2s linear;
+}
+@keyframes spinandback {
+    0% { transform: rotate(0deg);}
+    50% {transform: rotate(180deg);}
+    75% {transform: rotate(270deg);}
+}
+/* nome con la & non funziona!!! */
+/* ESERCIZIO 12 */
+.ex-12-button:hover .ex-12-top-white {
+    animation: buttonmovetop 2s;
+}
+@keyframes buttonmovetop {
+    0% {
+        left: 0;
+    }
+    25% {
+        left: calc(100%-40px);
+    }
+    50% {
+        left: calc(100%-20px);
+    }
+    75% {
+        left: calc(100%-10px);
+    }
+    90% {
+        left: calc(100%-5px);
+    }
+    100% {
+        left: calc(100%);
+    }
+
+}
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: buttonmovebottom 2s;
+}
+@keyframes buttonmovebottom {
+    0% {
+        right: 0;
+    }
+    25% {
+        right: calc(100%-40px);
+    }
+    50% {
+        right: calc(100%-20px);
+    }
+    75% {
+        right: calc(100%-10px);
+    }
+    90% {
+        right: calc(100%-5px);
+    }
+    100% {
+        right: calc(100%);
+    }
+
+}
+/* ESERCIZIO 13 */
+.ex-13-button:hover .ex-13-bottom-white {
+    animation: aroundthebutton 2s linear;
+}
+@keyframes aroundthebutton {
+    0% {
+        bottom: -10px;
+        right: 20%;
+    }
+    30% {
+        right: calc(100% - 30px);
+        bottom: -10px;
+    }
+    45% {
+        right: calc(100% - 30px);
+        bottom: 100%;
+    }
+    75% {
+        right: 0;
+        bottom: 100%;
+    }
+    90% {
+        right: -15px;
+        bottom: -10px;
+    }
+    100% {
+        bottom: -10px;
+        right: 20%;
+    }
+}
